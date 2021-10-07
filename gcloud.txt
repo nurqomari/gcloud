@@ -1,0 +1,59 @@
+https://console.cloud.google.com/getting-started?pli=1&authuser=0&cloudshell=true
+https://console.cloud.google.com/gett...
+script ;-  docker run -p 6080:80 dorowu/ubuntu-desktop-lxde-vnc  
+portb  ;- 6080
+docker run --privileged=true -d -p 6080:80 -p 3306:3306 -p 5900:5900 -e VNC_PASSWORD=rahasia -v /run/google/devshell:/run/google/devshell -v /home/nurqomari/nur:/home/nurqomari/nur -v /var/run/docker.sock:/var/run/docker.sock dorowu/ubuntu-desktop-lxde-vnc
+
+
+sudo apt-get install p7zip-full p7zip-rar
+
+https://6080-dda2236a-299d-4908-a3ca-bf0c2120ef7a.cs-asia-southeast1-yelo.cloudshell.dev/?authuser=0
+
+sudo code /directory-to-open --user-data-dir='.' --no-sandbox
+
+stop all container
+docker container stop $(docker container ls -aq)
+remove all container
+docker container rm $(docker container ls -aq)
+
+linux storage lsblk -a
+
+install vscode linux
+sudo apt update
+sudo apt install software-properties-common apt-transport-https wget
+wget -q https://packages.microsoft.com/keys/microsoft.asc -O- | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://packages.microsoft.com/repos/vscode stable main"
+sudo apt install code
+
+run it 
+sudo code /directory-to-open --user-data-dir='.' --no-sandbox
+sudo code /directory-to-open --user-data-dir='.' --no-sandbox
+
+install docker ubuntu 20
+sudo apt update
+sudo apt install apt-transport-https ca-certificates curl software-properties-common
+curl -fsSL https://download.docker.com/linux/ubuntu/gpg | sudo apt-key add -
+sudo add-apt-repository "deb [arch=amd64] https://download.docker.com/linux/ubuntu focal stable"
+apt-cache policy docker-ce
+sudo apt install docker-ce
+
+install docker-compose
+sudo curl -L "https://github.com/docker/compose/releases/download/1.27.4/docker-compose-$(uname -s)-$(uname -m)" -o /usr/local/bin/docker-compose
+sudo chmod +x /usr/local/bin/docker-compose
+
+
+
+install git sudo apt install git
+install node sudo apt install nodejs
+i=0
+while [ $i -le 1000 ]
+do
+echo "$i% Done"
+i= expr $i + 3
+sleep 10
+done
+
+
+
+
+
