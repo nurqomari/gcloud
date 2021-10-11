@@ -1,0 +1,36 @@
+di localhost ada port 80 yg kbuka jg gak gan?
+gak ada gan
+
+netsh interface portproxy add v4tov4 listenaddress=127.0.0.1 listenport=80 connectaddress=192.168.99.100 connectport=80
+
+netsh interface portproxy add v4tov4 listenaddress=10.60.60.3 listenport=80 connectaddress=192.168.99.100 connectport=80
+
+netsh interface portproxy add v4tov4 listenaddress=10.60.60.3 listenport=443 connectaddress=192.168.99.100 connectport=443
+
+netsh interface portproxy show all
+
+udah kena fwd itu
+
+tlg buka v boxnya gan
+
+tlg restart gan vmosnya 
+restart virtual box nya?
+iya linux yg di vbox 
+ok
+
+udah gan
+ok
+
+gan td yg direstart service dockernya atau mesin linuxnya jg?
+dua duanya gan
+
+ttp gk mau dipanggil dia
+
+coba tak restart semua ya
+udah gan
+
+http://localhost/auth/signin
+nah..ok nih
+sip mantabs gan
+
+lanjut wa yaok
